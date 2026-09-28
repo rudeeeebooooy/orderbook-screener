@@ -33,8 +33,8 @@ POLL_INTERVAL_SEC  = int(os.environ.get("POLL_INTERVAL_SEC", 20)) # пауза �
 SYMBOL_REQ_DELAY   = float(os.environ.get("SYMBOL_REQ_DELAY", 0.2))  # пауза між запитами по монетах (rate-limit)
 REFRESH_LIST_EVERY = int(os.environ.get("REFRESH_LIST_EVERY", 1800))  # як часто оновлювати топ-N список (сек)
 
-SENSITIVITY   = float(os.environ.get("SENSITIVITY", 5.0))   # у скільки разів обʼєм рівня має перевищувати медіану
-MIN_USD_WALL  = float(os.environ.get("MIN_USD_WALL", 30000))  # мінімальний обʼєм рівня в $, щоб рахувати стіною
+SENSITIVITY   = float(os.environ.get("SENSITIVITY", 10.0))   # у скільки разів обʼєм рівня має перевищувати медіану
+MIN_USD_WALL  = float(os.environ.get("MIN_USD_WALL", 100000))  # мінімальний обʼєм рівня в $, щоб рахувати стіною
 DEPTH_LIMIT   = int(os.environ.get("DEPTH_LIMIT", 50))       # скільки рівнів стакану тягнути з кожної сторони
 
 # Файл, у якому зберігається стан (список активних стін) між окремими
