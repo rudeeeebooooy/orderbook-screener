@@ -50,7 +50,7 @@ STABLE_BLACKLIST = {
 }
 LEVERAGED_SUFFIXES = ("UPUSDT", "DOWNUSDT", "BULLUSDT", "BEARUSDT")
 
-BINANCE_BASE = "https://api.binance.com"
+BINANCE_BASE = "https://data-api.binance.vision"
 TELEGRAM_API = f"https://api.telegram.org/bot{{token}}/sendMessage"
 
 # ============================================================================
